@@ -1,0 +1,12 @@
+.seatacNavbar{
+    width: 100%;
+    outline: auto;
+}
+.navigation-contr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 2, 33);
+    direction: row;
+}
