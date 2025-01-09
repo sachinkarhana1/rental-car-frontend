@@ -1,20 +1,29 @@
-import React from 'react'
-import "./css/Header.css"
-function Header() {
+import React from "react";
+import "./css/Header.css"; // Create a CSS file for styling
+import logo from "../assets/seatac_rental_logo.png";
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { FaUserCircle } from "react-icons/fa";
+
+const Header = () => {
   return (
-    <div className='seatacNavbar'>
-        <div className='seatac-logo-contr'>Logo</div>
-        <div className='navigation-contr'>
-            <ul>
-              <li><a href='#'>Menu</a></li>
-              <li><a href='#'>Button</a></li>
-              <li><a href='#'>Become a Host</a></li>
-              
-            </ul>
+    <header className="header">
+      <div className="navbar">
+        <div className="logo">
+          <img src={logo} alt="rental car logo" />
         </div>
-    </div>
 
-  )
-}
+        <div className="navbarbox">
+          <HiMiniBars3BottomRight className="headerMenuBars" size={20} />
 
-export default Header
+          <FaUserCircle className="headerMenuUserOption" size={32} />
+
+          <div className="headerMenuHostOption">
+            CREATE AN ACCOUNT FOR GUEST
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
